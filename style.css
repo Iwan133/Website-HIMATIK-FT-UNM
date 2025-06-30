@@ -1,0 +1,461 @@
+/* CSS yang Anda berikan sebelumnya */
+    .banner {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/banner.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+  .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("img/banner-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+    .banner-content {
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      margin-top: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .carousel-containt {
+      background-color: black;
+      color: white;
+    }
+
+    .blackquote {
+      height: 50vh;
+    }
+
+    .font-wlcm {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+    .font-hmtk {
+      font-family: Verdana;
+      text-decoration: double;
+      text-align: center;
+      color: red;
+    }
+
+    .font-family {
+      font-family: 'Arial Narrow Bold';
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .swiper {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffffff;
+    }
+
+    /* --- PERUBAHAN CSS YANG DISARANKAN --- */
+    /* Menambahkan ruang di sisi kiri dan kanan container video */
+    #Konten {
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+    }
+
+
+
+
+/* === STYLING UNTUK SEKSI ASPIRASI (WARNA BARU #08296E) === */
+
+/* Latar belakang utama seksi */
+.aspiration-section {
+  background-color: #f8f9fa;
+  background-image: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+/* Ikon bohlam di sisi kiri (warna kuning tetap dipertahankan untuk kontras) */
+.aspiration-icon i {
+  font-size: 50px;
+  color: #ffc107; 
+}
+
+/* Judul "BOX of ASPIRATION" */
+.aspiration-title {
+  font-size: 2.5rem;
+  
+  /* Fallback untuk browser yang tidak mendukung sama sekali */
+  color: #08296E; 
+  
+  /* Gradien untuk browser modern */
+  background: linear-gradient(45deg, #08296E, #1A5B9A);
+  
+  /* Properti dengan awalan untuk browser lama (WebKit) */
+  -webkit-background-clip: text;
+  
+  /* DITAMBAHKAN: Versi standar untuk browser modern, ini akan menghilangkan peringatan */
+  background-clip: text;
+  
+  /* Properti ini membuat warna teks asli menjadi transparan agar background terlihat */
+  -webkit-text-fill-color: transparent;
+}
+
+/* Kartu yang membungkus formulir */
+.form-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling input field kustom */
+.custom-input {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+/* Efek saat input field di-klik (focus) */
+.custom-input:focus {
+  /* DIUBAH: Warna border focus disesuaikan */
+  border-color: #08296E; 
+  /* DIUBAH: Warna bayangan focus disesuaikan */
+  box-shadow: 0 0 0 4px rgba(8, 41, 110, 0.25); 
+  transform: scale(1.02);
+}
+
+/* Tombol Kirim kustom */
+.btn-custom-primary {
+  color: #ffffff;
+  /* DIUBAH: Gradien tombol disesuaikan dengan warna baru */
+  background-image: linear-gradient(45deg, #08296E 0%, #1A5B9A 100%);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  /* DIUBAH: Warna bayangan tombol disesuaikan */
+  box-shadow: 0 5px 15px rgba(8, 41, 110, 0.3);
+}
+
+.btn-custom-primary:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  /* DIUBAH: Warna bayangan hover tombol disesuaikan */
+  box-shadow: 0 8px 25px rgba(8, 41, 110, 0.4);
+}
+
+
+/* === STYLING UNTUK PETA DI FOOTER === */
+
+.footer-map-container {
+  position: relative; /* Diperlukan untuk memposisikan overlay */
+  border-radius: 12px; /* Sudut yang tumpul */
+  overflow: hidden; /* Memastikan gambar tetap di dalam sudut tumpul */
+  border: 3px solid #343a40; /* Bingkai gelap yang solid */
+}
+
+.footer-map-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Filter untuk membuat gambar tidak terlalu mencolok & terlihat lebih 'branded' */
+  filter: grayscale(80%) brightness(80%) contrast(1.1);
+  transition: all 0.4s ease; /* Transisi halus untuk semua efek */
+}
+
+/* Efek saat mouse diarahkan ke peta */
+.footer-map-container:hover img {
+  filter: grayscale(0%) brightness(100%) contrast(1); /* Warna peta kembali normal */
+  transform: scale(1.05); /* Sedikit memperbesar gambar */
+}
+
+/* Lapisan overlay gelap yang muncul saat hover */
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Tersembunyi secara default */
+  transition: opacity 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-map-container:hover .map-overlay {
+  opacity: 1; /* Muncul saat hover */
+}
+
+/* Tombol di tengah overlay */
+.map-overlay-button {
+  color: #ffffff;
+  background-color: #08296E; /* Menggunakan warna biru tua Anda */
+  padding: 10px 20px;
+  border-radius: 50px; /* Bentuk pil yang modern */
+  font-weight: 600;
+  font-size: 0.9rem;
+  transform: translateY(20px); /* Posisi awal sedikit di bawah */
+  transition: transform 0.4s ease;
+}
+
+.footer-map-container:hover .map-overlay-button {
+  transform: translateY(0); /* Kembali ke posisi normal saat hover */
+}
+
+/* === STYLING UNTUK SEKSI SEKILAS TENTANG HIMATIK === */
+
+/* Wadah utama seksi */
+.overview-section {
+  /* Memberi sedikit ruang di atas dan bawah, bisa disesuaikan */
+  padding: 50px 0;
+}
+
+/* Kartu melayang */
+.overview-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  position: relative; /* Diperlukan agar bisa tumpang tindih */
+  z-index: 10;
+  
+  /* EFEK MELAYANG: 
+     Margin atas negatif akan menarik kartu ini ke atas,
+     sehingga sedikit menimpa seksi banner sebelumnya.
+  */
+  margin-top: -100px;
+}
+
+/* Penyesuaian untuk teks di dalam kartu */
+.overview-text h2 {
+  color: #08296E; /* Menggunakan warna biru tua Anda */
+}
+
+.overview-text p {
+  line-height: 1.8; /* Jarak antar baris agar mudah dibaca */
+}
+
+/* Penyesuaian untuk logo */
+.overview-logo img {
+  max-width: 200px; /* Batas maksimal lebar logo */
+}
+
+/* Penyesuaian Responsif untuk Mobile */
+@media (max-width: 991px) {
+  /* Di layar kecil, logo disembunyikan agar fokus pada teks */
+  .overview-logo {
+    display: none;
+  }
+  
+  /* Efek melayang dikurangi di layar kecil agar tidak terlalu menutupi banner */
+  .overview-card {
+    margin-top: -60px;
+  }
+  
+  /* Teks dibuat di tengah di tampilan mobile */
+  .overview-text {
+    text-align: center;
+  }
+}
+
+
+
+/* === STYLING UNTUK SEKSI JURNAL PROFESIONAL === */
+
+/* Latar belakang seksi yang lebih halus */
+.jurnal-section {
+  background-color: #f8f9fa;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Judul seksi */
+.jurnal-title {
+  color: #08296E; /* Menggunakan warna biru tua Anda */
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Garis bawah dekoratif untuk judul */
+.jurnal-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-image: linear-gradient(90deg, #08296E, #1A5B9A);
+  border-radius: 2px;
+}
+
+/* Di mobile, garis bawah berada di tengah */
+@media (max-width: 991px) {
+  .jurnal-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Wrapper untuk efek 3D perspective */
+.jurnal-image-wrapper {
+  perspective: 1000px; /* Menciptakan ruang 3D */
+}
+
+/* Styling utama gambar jurnal */
+.journal-image {
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Efek 3D yang elegan saat mouse diarahkan ke gambar */
+.jurnal-image-wrapper:hover .journal-image {
+  box-shadow: 0 25px 50px rgba(8, 41, 110, 0.3);
+  /* Gambar akan berputar pada sumbu Y dan sedikit membesar */
+  transform: rotateY(10deg) scale(1.05);
+}
+
+/* Tombol Aksi Kustom (Call-to-Action) */
+.btn-custom-jurnal {
+  background-color: transparent;
+  border: 2px solid #08296E;
+  color: #08296E;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-custom-jurnal:hover {
+  background-color: #08296E;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(8, 41, 110, 0.2);
+}
+
+
+/* CSS untuk Desain Pop-up / Modal Produk */
+    .product-modal-content {
+        border: none;
+        border-radius: 20px;
+        background-color: transparent;
+    }
+    .product-card { 
+        background-color: #ffffff; 
+        border-radius: 20px; 
+        padding: 20px; 
+        overflow: hidden; 
+    }
+    .product-modal-image {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .product-title { 
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.2rem; 
+        font-weight: 700; 
+        color: #08296E; /* Navy */
+        line-height: 1.3; 
+    }
+    .product-price { 
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem; 
+        font-weight: 700; 
+        color: #F06A09; /* Orange */
+        margin: 15px 0; 
+    }
+    .product-description { 
+        font-family: 'Poppins', sans-serif;
+        color: #6c757d; 
+        font-size: 1rem; 
+        line-height: 1.8; 
+    }
+    .specifications h5 { 
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600; 
+        color: #08296E; /* Navy */
+        margin-top: 25px; 
+        margin-bottom: 15px; 
+    }
+    .specifications ul { list-style: none; padding-left: 0; }
+    .specifications li { 
+        padding-left: 25px; 
+        position: relative; 
+        margin-bottom: 10px; 
+        color: #333;
+    }
+    .specifications li::before { 
+        content: "\f26a"; 
+        font-family: 'Bootstrap-Icons';
+        position: absolute; left: 0; top: 2px; 
+        color: #F06A09; /* Orange */
+        font-weight: bold; 
+    }
+    .btn-order { 
+        background-color: #F06A09; /* Orange */
+        border-color: #F06A09; /* Orange */
+        color: #fff; 
+        padding: 12px 30px; 
+        font-size: 1.1rem; 
+        font-weight: 600; 
+        border-radius: 50px; 
+        transition: all 0.3s ease;
+    }
+    .btn-order:hover { 
+        background-color: #D95F08; 
+        border-color: #D95F08; 
+        color: #fff; 
+        transform: translateY(-3px);
+    }
+
+    /* Penyesuaian untuk Tampilan Mobile */
+    @media (max-width: 991.98px) {
+        .product-modal-image {
+            height: 300px; /* Atur tinggi gambar di mobile */
+        }
+        .product-title {
+            font-size: 1.8rem;
+        }
+        .product-price {
+            font-size: 1.6rem;
+        }
+    }
+
+    
